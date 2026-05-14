@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AI Resume Analyzer</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <header>
+    <h1>AI Resume Analyzer & ATS Checker</h1>
+    <p>Smart Resume Screening System</p>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h2>Boost Your Resume Score</h2>
+      <p>
+        Upload your resume and get instant ATS score,
+        skill analysis, missing keywords, and AI suggestions.
+      </p>
+      <button onclick="analyzeResume()">Analyze Resume</button>
+    </div>
+
+    <div class="upload-box">
+      <input type="file" id="resumeFile"/>
+      <p>Upload Resume PDF/DOC</p>
+    </div>
+  </section>
+
+  <section class="features">
+    <h2>Features</h2>
+
+    <div class="cards">
+
+      <div class="card">
+        <h3>ATS Score</h3>
+        <p>Get resume compatibility score instantly.</p>
+      </div>
+
+      <div class="card">
+        <h3>Skill Detection</h3>
+        <p>Extract technical and soft skills automatically.</p>
+      </div>
+
+      <div class="card">
+        <h3>AI Suggestions</h3>
+        <p>Improve your resume with smart recommendations.</p>
+      </div>
+
+      <div class="card">
+        <h3>Job Match</h3>
+        <p>Check how well your resume fits job roles.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="result-section">
+    <h2>Resume Analysis Result</h2>
+
+    <div class="result-card">
+
+      <div class="score-circle">
+        <span id="score">0%</span>
+      </div>
+
+      <div class="analysis">
+
+        <h3>Detected Skills</h3>
+        <ul id="skills">
+          <li>React.js</li>
+          <li>Node.js</li>
+          <li>MongoDB</li>
+        </ul>
+
+        <h3>Suggestions</h3>
+        <ul id="suggestions">
+          <li>Add more projects.</li>
+          <li>Improve keyword optimization.</li>
+          <li>Add certifications section.</li>
+        </ul>
+
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 AI Resume Analyzer | MERN Project</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
